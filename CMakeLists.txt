@@ -202,6 +202,7 @@ endif()
 set(SIMULATION_TARGET cell_growth)
 add_executable(${SIMULATION_TARGET} ${CMAKE_SOURCE_DIR}/demo/cell_growth.cc)
 target_link_libraries(${SIMULATION_TARGET} biodynamo)
+file(MAKE_DIRECTORY ${CMAKE_SOURCE_DIR}/output)
 
 # --------------------- build backend_arch demo
 set(BACKEND_ARCH backend_arch)
